@@ -1,19 +1,21 @@
 import './name&Job.scss'
 import {Link} from "react-router-dom";
+import videoPresentation from '../../assets/60imgs.mp4'
 
 function NameJob() {
 
     return (
-        <div>
-            <div className='presentation'>
-                <h1 className='presentation_name'>GAETAN A. CALLENS</h1>
-                <h2 className='presentation_job'>Développeur Front-end & Graphiste</h2>
+        <div className='presentation'>
+            <div className='presentation_text'>
+                <h1>GAETAN A. CALLENS</h1>
+                <h2>Développeur Front-end & Graphiste</h2>
                 <p>Autodidacte de 22 ans, je suis passionné par le développement web,
                     l'UI/UX et l'accessibilité depuis 9 ans.</p>
                 <Link to='/contact'>
                     <button>Me contacter</button>
                 </Link>
             </div>
+            <video src={videoPresentation} autoPlay loop muted/>
         </div>
     )
 
