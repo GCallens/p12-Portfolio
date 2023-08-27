@@ -1,0 +1,64 @@
+@import "../../../color/color";
+
+.partTwo {
+
+    width: 50%;
+    height: 100vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+
+    section {
+        font-size: 15px;
+        color: $thirdColor;
+        padding-top: 7rem;
+    }
+
+}
+
+.repoGitHub {
+
+    margin-bottom: 70px;
+    width: fit-content;
+
+    &_content {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+        span {
+
+            font-size: 30px;
+
+        }
+
+    }
+
+    &_content:hover {
+
+        gap: 10px;
+        transition-duration: .15s;
+
+        span {
+
+            color: $fourthColor;
+
+        }
+
+        p {
+
+            color: $fourthColor;
+
+        }
+
+    }
+
+
+    img {
+
+        width: 30px;
+
+    }
+
+}

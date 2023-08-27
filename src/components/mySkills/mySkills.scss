@@ -1,2 +1,144 @@
-@import "../../index.scss";
+@import '../../color/color.scss';
 
+.skill {
+
+    &_top {
+
+        &_title {
+
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+
+            &_line {
+
+                background-color: $fourthColor;
+                height: 1px;
+                width: 50%;
+
+            }
+
+            &_name {
+
+                margin-left: 1rem;
+                color: $fourthColor;
+
+            }
+
+        }
+
+        &_card {
+
+            position: relative;
+            margin-bottom: 15px;
+
+            &_content {
+
+                padding: 15px;
+
+                h4 {
+
+                    color: $thirdColor;
+
+                }
+
+                &_box {
+
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 200px;
+
+                    .technologies {
+
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 7px;
+                        width: 50%;
+
+                        &_row {
+
+                            display: flex;
+                            justify-content: space-between;
+                            width: 100%;
+
+                        }
+
+                        .technologies_color {
+
+                            position: absolute;
+                            opacity: 0;
+
+                        }
+
+                        .technologies_color:hover {
+
+                            opacity: 1;
+                            transition-duration: 0.3s;
+
+                        }
+
+                        ul {
+
+                            position: relative;
+                            display: grid;
+                            gap: 5px;
+                            background-color: transparent;
+
+                            li {
+
+                                background-color: transparent;
+
+                            }
+
+                            li:before {
+                                content: "▹";
+                                position: absolute;
+                                left: -15px;
+                                color: $fourthColor;
+                                line-height: 23px;
+                            }
+
+                        }
+
+                    }
+
+                    .github_color {
+
+                        position: absolute;
+                        opacity: 0;
+
+                    }
+
+                    .github_color:hover {
+
+                        opacity: 1;
+                        transition-duration: 0.3s;
+
+                    }
+
+                    img {
+                        width: 50px;
+                    }
+
+                    .line {
+
+                        background-color: $fourthColor;
+                        height: 170px;
+                        width: 1px;
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

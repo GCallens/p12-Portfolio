@@ -1,63 +1,35 @@
-@import "../../index.scss";
+@import '../../color/color.scss';
+
 
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    background-color: #000;
-    color: #FFF;
-    height: auto;
-    padding: 40px 10%;
-    font-size: clamp(12px, 2.5vw, 17px);
-    @media screen and (min-width: 901px) {
-        &_photo {
-            display: none;
-        }
-
-        &_caricatural {
-            height: 400px;
-        }
-
-        &_text {
-            height: 55%;
-            width: 550px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    }
-    @media screen and (max-width: 900px) {
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-        gap: 0;
-        &_photo {
-            width: 100%;
-
-            img {
-                width: 100vw;
-            }
-        }
-
-        &_text {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 50px 7%;
-        }
-
-        &_caricatural {
-            display: none;
-        }
-    }
 
     &_title {
-        margin-bottom: 30px;
+
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+
+        &_line {
+
+            background-color: $fourthColor;
+            height: 1px;
+            width: 50%;
+
+        }
+
+        &_name {
+
+            margin-left: 1rem;
+            color: $fourthColor;
+
+        }
 
     }
 
-    &_article {
-        margin-bottom: 30px;
+    &_text {
+
+        color: $thirdColor;
+
     }
+
 }

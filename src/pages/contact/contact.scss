@@ -1,2 +1,156 @@
 @import "../../index.scss";
+@import "../../color/color.scss";
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contact {
+
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    gap: 70px;
+
+    .leftSide {
+
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        h1, h3 {
+
+            color: $thirdColor;
+
+        }
+
+        img {
+
+            width: 130px;
+
+        }
+
+    }
+
+    .line {
+
+        height: 200px;
+        width: 1px;
+        background-color: $fourthColor;
+
+    }
+
+    .rightSide {
+
+        display: flex;
+        width: 70%;
+
+        form {
+
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            width: 100%;
+
+            input,
+            textarea {
+                padding: 15px;
+                border: 0;
+                background-color: #31313c;
+                color: $thirdColor;
+                border-radius: 7px;
+            }
+
+            input:focus,
+            textarea:focus { outline: 0; }
+
+            .name {
+
+                display: flex;
+                width: 100%;
+                gap: 50px;
+
+                &_name {
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+
+                }
+
+                &_surname {
+
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+
+                }
+
+            }
+
+            .email {
+
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .subject {
+
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .message {
+
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+
+                textarea {
+
+                    height: 160px;
+                    width: 100%;
+                    resize: none;
+
+                }
+
+            }
+
+            .btn {
+
+                display: flex;
+                justify-content: right;
+
+            }
+
+            button {
+
+                color: $secondColor;
+                padding: 20px;
+                border: 2px solid $fourthColor;
+                border-radius: 25px;
+                cursor: pointer;
+                width: 120px;
+
+            }
+
+            button:hover {
+
+                color: $fourthColor;
+                border: 2px solid $thirdColor;
+                transition-duration: .15s;
+
+            }
+
+
+
+        }
+
+    }
+
+}

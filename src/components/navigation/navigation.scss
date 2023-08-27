@@ -1,0 +1,89 @@
+@import "../../color/color.scss";
+
+.nav {
+
+    a {
+        display: flex;
+        align-items: center;
+    }
+
+    &_link {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        width: fit-content;
+        font-size: 13px;
+        font-weight: 500;
+
+        :hover {
+
+            .nav_indicator {
+                display: inline-block;
+                width: 70px;
+                height: 2px;
+                margin-right: 1rem;
+                background-color: $secondColor;
+                transition-duration: .15s;
+                opacity: 1;
+            }
+
+            .nav_title {
+                color: $secondColor;
+                transition-duration: .15s;
+                opacity: 1;
+            }
+
+        }
+    }
+
+    .isActive {
+
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        width: fit-content;
+        font-size: 13px;
+        font-weight: 500;
+
+
+        .nav_indicator {
+            display: inline-block;
+            width: 70px;
+            height: 2px;
+            margin-right: 1rem;
+            background-color: $secondColor;
+            transition-duration: .15s;
+            opacity: 1;
+        }
+
+        .nav_title {
+            color: $secondColor;
+            transition-duration: .15s;
+            opacity: 1;
+        }
+
+    }
+
+    ul {
+        margin-top: 4rem;
+        line-height: 1;
+
+        .nav_indicator {
+            display: inline-block;
+            width: 30px;
+            height: 1px;
+            margin-right: 1rem;
+            background-color: $thirdColor;
+            opacity: 0.8;
+        }
+
+        .nav_title {
+            color: $thirdColor;
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,28 +1,22 @@
 import './about.scss'
-import DrawingPhoto from '../../assets/moi_code.jpeg'
-import Profil from '../../assets/caricature.jpeg'
 
 function About() {
 
     return (
-        <section className="about">
-            <div className='about_photo'>
-                <img src={DrawingPhoto} alt='Gaetan A. Callens qui se dessine une caricature'/>
+
+        <section id='about'>
+
+            <div className='about_title'>
+                <div className='about_title_line'></div>
+                <h3 className='about_title_name'>À propos de moi</h3>
             </div>
-            <div className='about_text'>
-                <h3 className='about_title'>À propos de moi</h3>
-                <p className='about_article'>
-                    Je suis passionné par le <strong>développement front-end</strong> et le <strong>web design</strong>,
-                    étant sensibilisé à <strong>l'expérience utilisateur</strong> et l'<strong>accessibilité</strong>,
-                    je développe des projets centré autour de l'<strong>Humain</strong>.
-                </p>
-                <p>
-                    De plus, je suis intéressé par le monde de l'<strong>open-source</strong>, je suis contributeur de
-                    plusieurs projets et je suis en parallèle attiré par l'<strong>enseignement</strong>
-                    (talks, articles, mentoring).
-                </p>
-            </div>
-            <img className='about_caricatural' src={Profil} alt='Caricature de Gaetan A. Callens'/>
+
+            <p className='about_text'>
+                Back in 2012, I decided to try my hand at creating custom Tumblr themes and tumbled head first into the rabbit hole of coding and web development. Fast-forward to today, and I’ve had the privilege of building software for an advertising agency, a start-up, a student-led design studio, and a huge corporation.
+                My main focus these days is building products and leading projects for our clients at Upstatement. In my free time I've also released an online video course that covers everything you need to know to build a web app with the Spotify API.
+                When I’m not at the computer, I’m usually rock climbing, hanging out with my wife and two cats, or running around Hyrule searching for Korok seeds
+            </p>
+
         </section>
     )
 }

@@ -1,0 +1,85 @@
+@import "../../color/color.scss";
+
+.errorPage {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+
+    &_partOne {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+
+        h1 {
+
+            color: $thirdColor;
+
+        }
+
+        &_line {
+
+            background-color: $fourthColor;
+            width: 1px;
+            height: 100%;
+
+        }
+
+        p {
+
+            color: $thirdColor;
+
+        }
+
+    }
+
+    &_partTwo {
+
+        h4 {
+
+            background-image: linear-gradient(
+                    to right,
+                    $secondColor,
+                    $fourthColor 50%,
+                    $thirdColor 50%
+            );
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 5px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 1.5rem;
+        }
+
+        h4:before {
+            content: '';
+            background: $fourthColor;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h4:hover {
+            background-position: 0;
+        }
+
+        h4:hover::before {
+            width: 100%;
+        }
+
+    }
+
+}

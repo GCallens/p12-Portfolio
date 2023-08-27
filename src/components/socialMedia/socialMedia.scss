@@ -1,0 +1,20 @@
+@import '../../color/color.scss';
+
+.socialMedia {
+
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 32px 0 0;
+
+    &_logo {
+        height: 23px;
+        color: $secondColor;
+        opacity: 0.6;
+
+        &:hover {
+            opacity: 0.9;
+            transition-duration: .15s;
+        }
+    }
+}

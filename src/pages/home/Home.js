@@ -1,27 +1,16 @@
 import './home.scss'
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import NameJob from "../../components/name&Job/Name&Job";
-import About from "../../components/about/About";
-import MyServices from "../../components/myServices/MyServices";
-import MyEducations from "../../components/myEducations/MyEducations";
-import MySkills from "../../components/mySkills/MySkills";
-import MyProjects from "../../components/myProjects/MyProjects";
-
+import Header from "../../body/bodyHome/header/Header";
+import Main from "../../body/bodyHome/main/Main";
 
 
 function Home() {
     return (
-        <div>
+
+        <div className='portfolio'>
             <Header/>
-            <NameJob/>
-            <About/>
-            <MyServices/>
-            <MySkills/>
-            <MyProjects/>
-            <MyEducations/>
-            <Footer/>
+            <Main/>
         </div>
+
     )
 }
 
